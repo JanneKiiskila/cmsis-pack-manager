@@ -134,7 +134,6 @@ where
 {
     pub fn new(config: &'a Conf, prog: Prog, log: &'a Logger) -> Result<Self, Error> {
         let client = ClientBuilder::new()
-            .use_rustls_tls()
             .use_sys_proxy()
             .redirect(RedirectPolicy::limited(5))
             .build()?;

@@ -19,5 +19,3 @@ pdsc = { path = "../pdsc" }
 
 [dependencies.reqwest]
 version = "0.9.21"
-default_features = false
-features = ["rustls-tls"]
